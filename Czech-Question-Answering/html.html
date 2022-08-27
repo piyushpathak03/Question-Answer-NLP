@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                border: 1px solid black;
+                width:100%;
+                border-collapse: collapse;
+                float: left;
+                margin-bottom: 50px;
+                background-color:#ccebff;
+            }
+            td {
+                border: 1px solid black;
+                widht:80%;
+            }
+            th {
+                border: 1px solid black;
+                width:20%;
+            }
+            h1 {
+                text-align: center;               
+                background-color:#0099FF;
+                color:#ffffff;
+                padding: 15px 0px 15px 0px;
+            }
+            h2 {
+                text-align: left;
+                font-weight: bold; 
+                color: #ffffff;
+            }
+            body {
+                background-color:#80CCFF;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Question Answering</h1>
+        <h2>University_of_Notre_Dame</h2>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Architektonicky má škola katolický charakter. Na vrcholu zlaté kopule Hlavní budovy je zlatá socha Panny Marie. Přímo před hlavní budovou stojí <font color='red'>měděná socha Krista</font> s pažemi vztyčenými s nápisem "Venite Ad Me Omnes". Hned vedle hlavní budovy je bazilika svatého srdce. Hned za bazilikou je Grotto, mariánské místo modliteb a reflexí. Jedná se o repliku jeskyně v Lourdech ve Francii, kde se podle pověsti v roce 1858 zjevila Panna Marie svaté Bernadette Soubirousové. Na konci hlavní příjezdové cesty (a v přímé linii, která spojuje 3 sochy se Zlatým dómem) je jednoduchá, moderní kamenná socha Marie.</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Co je před hlavní budovou Notre Dame?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>měděná socha Krista</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Architektonicky má škola katolický charakter. Na vrcholu zlaté kopule Hlavní budovy je <font color='red'>zlatá socha Panny Marie.</font> Přímo před hlavní budovou stojí měděná socha Krista s pažemi vztyčenými s nápisem "Venite Ad Me Omnes". Hned vedle hlavní budovy je bazilika svatého srdce. Hned za bazilikou je Grotto, mariánské místo modliteb a reflexí. Jedná se o repliku jeskyně v Lourdech ve Francii, kde se podle pověsti v roce 1858 zjevila Panna Marie svaté Bernadette Soubirousové. Na konci hlavní příjezdové cesty (a v přímé linii, která spojuje 3 sochy se Zlatým dómem) je jednoduchá, moderní kamenná socha Marie.</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Co se nachází na vrcholu Hlavní budovy v Notre Dame?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>zlatá socha Panny Marie</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Stejně jako na většině jiných univerzit provozují studenti Notre Dame řadu zpravodajských médií. Mezi devíti studentskými prodejnami jsou tři noviny, rozhlasová a televizní stanice, a několik časopisů a časopisů. Časopis Scholastic byl vydán jako jednostránkový časopis v <font color='red'>září 1876</font> dvakrát měsíčně a tvrdí, že je nejstarší souvislou kolegiální publikací ve Spojených státech. Druhý časopis, Žonglér, vychází dvakrát ročně a zaměřuje se na studentskou literaturu a umělecká díla. Ročenka časopisu Dome vychází každoročně. Noviny mají různé publikační zájmy, deník The Observer publikuje denně a především informuje o univerzitních a jiných novinkách a zaměstnává studenty jak z Notre Dame, tak ze Saint Mary's College. Na rozdíl od Scholastic a The Dome je The Observer nezávislou publikací a nemá fakultního poradce ani žádný redakční dohled ze strany univerzity. V roce 1987, kdy někteří studenti uvěřili, že The Observer začal vykazovat konzervativní předpojatost, liberální noviny, byl publikován Selský rozum. Stejně tak v roce 2003, kdy se ostatní studenti domnívali, že noviny vykazují liberální předpojatost, se do výroby pustil konzervativní list Irish Rover. Žádná z prací není publikována tak často jako The Observer; všechny tři jsou však distribuovány všem studentům. Nakonec na jaře 2008 debutoval vysokoškolský časopis pro výzkum politických věd Beyond Politics.</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Kdy začal vydávat Scholastic Magazine of Notre dame?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>Září 1876</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Stejně jako na většině jiných univerzit provozují studenti Notre Dame řadu zpravodajských médií. Mezi devíti studentskými prodejnami jsou tři noviny, rozhlasová a televizní stanice, a několik časopisů a časopisů. Časopis Scholastic byl vydán jako jednostránkový časopis v září 1876 dvakrát měsíčně a tvrdí, že je nejstarší souvislou kolegiální publikací ve Spojených státech. Druhý časopis, Žonglér, vychází <font color='red'>dvakrát</font> ročně a zaměřuje se na studentskou literaturu a umělecká díla. Ročenka časopisu Dome vychází každoročně. Noviny mají různé publikační zájmy, deník The Observer publikuje denně a především informuje o univerzitních a jiných novinkách a zaměstnává studenty jak z Notre Dame, tak ze Saint Mary's College. Na rozdíl od Scholastic a The Dome je The Observer nezávislou publikací a nemá fakultního poradce ani žádný redakční dohled ze strany univerzity. V roce 1987, kdy někteří studenti uvěřili, že The Observer začal vykazovat konzervativní předpojatost, liberální noviny, byl publikován Selský rozum. Stejně tak v roce 2003, kdy se ostatní studenti domnívali, že noviny vykazují liberální předpojatost, se do výroby pustil konzervativní list Irish Rover. Žádná z prací není publikována tak často jako The Observer; všechny tři jsou však distribuovány všem studentům. Nakonec na jaře 2008 debutoval vysokoškolský časopis pro výzkum politických věd Beyond Politics.</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Jak často vychází Notre Dame's the Juggler?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>dvakrát</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Stejně jako na většině jiných univerzit provozují studenti Notre Dame řadu zpravodajských médií. Mezi devíti studentskými prodejnami jsou tři noviny, rozhlasová a televizní stanice, a několik časopisů a časopisů. Časopis Scholastic byl vydán jako jednostránkový časopis v září 1876 dvakrát měsíčně a tvrdí, že je nejstarší souvislou kolegiální publikací ve Spojených státech. Druhý časopis, Žonglér, vychází dvakrát ročně a zaměřuje se na studentskou literaturu a umělecká díla. Ročenka časopisu Dome vychází každoročně. Noviny mají různé publikační zájmy, deník <font color='red'>The Observer</font> publikuje denně a především informuje o univerzitních a jiných novinkách a zaměstnává studenty jak z Notre Dame, tak ze Saint Mary's College. Na rozdíl od Scholastic a The Dome je The Observer nezávislou publikací a nemá fakultního poradce ani žádný redakční dohled ze strany univerzity. V roce 1987, kdy někteří studenti uvěřili, že The Observer začal vykazovat konzervativní předpojatost, liberální noviny, byl publikován Selský rozum. Stejně tak v roce 2003, kdy se ostatní studenti domnívali, že noviny vykazují liberální předpojatost, se do výroby pustil konzervativní list Irish Rover. Žádná z prací není publikována tak často jako The Observer; všechny tři jsou však distribuovány všem studentům. Nakonec na jaře 2008 debutoval vysokoškolský časopis pro výzkum politických věd Beyond Politics.</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Jak se jmenují denní studentské noviny v Notre Dame?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>The Observer</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Univerzita je hlavním sídlem Kongregace Svatého Kříže (i když ne jejím oficiálním sídlem, které je v <font color='red'>Římě).</font> Jeho hlavní seminář, Moreauův seminář, se nachází v kampusu přes jezero Sv. Josefa od hlavní budovy. Stará kolej, nejstarší budova kampusu a nachází se u břehu jezera Svaté Marie, sídlí vysokoškolských seminaristů. Kněží a bratři ve výslužbě sídlí v domě Fatima (bývalém středisku ústupu), v domě Svatého Kříže a také v Columbově síni u Grotta. Univerzita má prostřednictvím Moreauova semináře vazby na teologa Fredericka Buechnera. Buechner sice není katolík, ale ocenil spisovatele ze semináře Notre Dame a Moreau, kteří vytvořili Buechnerovu cenu za kazatelství.</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Kde je sídlo Kongregace Svatého Kříže?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>Řím</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Univerzita je hlavním sídlem Kongregace Svatého Kříže (i když ne jejím oficiálním sídlem, které je v Římě). Jeho hlavní seminář, <font color='red'>Moreauův seminář,</font> se nachází v kampusu přes jezero Sv. Josefa od hlavní budovy. Stará kolej, nejstarší budova kampusu a nachází se u břehu jezera Svaté Marie, sídlí vysokoškolských seminaristů. Kněží a bratři ve výslužbě sídlí v domě Fatima (bývalém středisku ústupu), v domě Svatého Kříže a také v Columbově síni u Grotta. Univerzita má prostřednictvím Moreauova semináře vazby na teologa Fredericka Buechnera. Buechner sice není katolík, ale ocenil spisovatele ze semináře Notre Dame a Moreau, kteří vytvořili Buechnerovu cenu za kazatelství.</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Jaký je hlavní seminář Kongregace Svatého Kříže?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>Moreauův seminář</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Vysoká škola strojní byla založena v roce 1920, rané kurzy inženýrského a strojního inženýrství však byly součástí Vysoké školy vědecké od 70. let 19. století. Dnes fakulta sídlí ve Fitzpatrickově, Cushingově a Stinsonově-Remickově sále strojírenství a zahrnuje pět kateder studia – letecké a strojní inženýrství, chemické a biomolekulární inženýrství, stavební inženýrství a geologické vědy, informatiku a inženýrství a elektrotechniku – s <font color='red'>osmi</font> diplomy B.S. Vysoká škola navíc nabízí pětileté duální studijní programy s obory Umění a Dopisy a podnikání, které udělují další tituly B.A. a Master of Business Administration (MBA).</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Kolik titulů BS se nabízí na Vysoké škole technické při Notre Dame?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>osm</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Vysoká škola strojní byla založena v roce <font color='red'>1920,</font> rané kurzy inženýrského a strojního inženýrství však byly součástí Vysoké školy vědecké od 70. let 19. století. Dnes fakulta sídlí ve Fitzpatrickově, Cushingově a Stinsonově-Remickově sále strojírenství a zahrnuje pět kateder studia – letecké a strojní inženýrství, chemické a biomolekulární inženýrství, stavební inženýrství a geologické vědy, informatiku a inženýrství a elektrotechniku – s osmi diplomy B.S. Vysoká škola navíc nabízí pětileté duální studijní programy s obory Umění a Dopisy a podnikání, které udělují další tituly B.A. a Master of Business Administration (MBA).</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>V jakém roce vznikla Vysoká škola technická při Notre Dame?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>1920</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Vysoká škola strojní byla založena v roce 1920, rané kurzy inženýrského a strojního inženýrství však byly součástí Vysoké školy vědecké od 70. let 19. století. Dnes fakulta sídlí ve Fitzpatrickově, Cushingově a Stinsonově-Remickově sále strojírenství a zahrnuje <font color='red'>pět</font> kateder studia – letecké a strojní inženýrství, chemické a biomolekulární inženýrství, stavební inženýrství a geologické vědy, informatiku a inženýrství a elektrotechniku – s osmi diplomy B.S. Vysoká škola navíc nabízí pětileté duální studijní programy s obory Umění a Dopisy a podnikání, které udělují další tituly B.A. a Master of Business Administration (MBA).</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Kolik oddělení je ve Stinson-Remickově síni techniky?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>pět</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Všichni vysokoškolští studenti Notre Dame jsou součástí jednoho z <font color='red'>pěti</font> vysokoškolských studijních programů na této škole nebo jsou v prvním ročníku studijního programu. První ročník studijního programu byl založen v roce 1962, aby vedl nastupující prváky v prvním ročníku školy před tím, než vyhlásí obor. Každému studentovi je poskytnut akademický poradce z programu, který mu pomůže vybrat předměty, které ho vystaví jakémukoliv oboru, o který má zájem. Součástí programu je také Centrum učebních zdrojů, které poskytuje řízení času, učení se ve spolupráci a doučování předmětů. Tento program byl již dříve uznán US News & World Report za vynikající.</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Kolik vysokých škol pro vysokoškoláky je v Notre Dame?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>pět</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>CONTEXT</th>
+                <td>Všichni vysokoškolští studenti Notre Dame jsou součástí jednoho z pěti vysokoškolských studijních programů na této škole nebo jsou v prvním ročníku studijního programu. <font color='red'>První ročník studijního programu</font> byl založen v roce 1962, aby vedl nastupující prváky v prvním ročníku školy před tím, než vyhlásí obor. Každému studentovi je poskytnut akademický poradce z programu, který mu pomůže vybrat předměty, které ho vystaví jakémukoliv oboru, o který má zájem. Součástí programu je také Centrum učebních zdrojů, které poskytuje řízení času, učení se ve spolupráci a doučování předmětů. Tento program byl již dříve uznán US News & World Report za vynikající.</td>
+            </tr>
+            <tr>
+                <th>QUESTION</th>
+                <td>Co bylo vytvořeno v Notre Dame v roce 1962, aby pomáhalo studentům prvního ročníku?</td>
+            </tr>
+            <tr>
+                <th>ANSWER</th>
+                <td>První ročník studijního programu</td>
+            </tr>
+        </table>
+    
+    </body>
+</html>
